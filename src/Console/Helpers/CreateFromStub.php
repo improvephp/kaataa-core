@@ -31,9 +31,14 @@ class CreateFromStub
         return $this;
     }
 
+    protected function determineDirectoryPackage()
+    {
+        return (debug_backtrace()[count(debug_backtrace()) - 1]['file']);
+    }
+
     public function destination(string $destination = null)
     {
-        $destination = $destination ?: (debug_backtrace()[count(debug_backtrace()) - 1]['file']); // __DIR__ . '/../../';
+        $destination = $destination ?: $this->determineDirectoryPackage(); // __DIR__ . '/../../';
 
         return $this;
     }
