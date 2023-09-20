@@ -1,6 +1,7 @@
 {
     "name": "sebacarrasco93/kaataa-core",
-    "description": "Core files for sebacarrasco93/kaataa",
+    "description": "Core files for kaataa",
+    "keywords": ["kaataa-core", "php", "kata", "phpunit", "mockery"],
     "type": "package",
     "license": "MIT",
     "autoload": {
@@ -16,6 +17,7 @@
         }
     ],
     "require": {
+        "php": "^8.1",
         "mockery/mockery": "^1.5",
         "symfony/console": "^6.3",
         "symfony/var-dumper": "^6.3",
