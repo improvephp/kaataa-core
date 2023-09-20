@@ -41,8 +41,11 @@ class MakeTestCommand extends BaseCommand
         $result = $create->stub('test')
             ->content()
             ->replace([
-                '{{ namespace }}' => 'Tests',
-                '{{ class }}' => $name . 'Test',
+                '{{ namespace }}' => 'Kaataa',
+                '{{ namespaceTest }}' => 'Tests',
+                '{{ class }}' => $name,
+                '{{ classTest }}' => "{$name}Test",
+                '{{ instance }}' => strtolower($name),
             ])->inDirectory('tests')
             ->output()
             ->fileName($name . 'Test')

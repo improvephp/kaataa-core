@@ -29,7 +29,7 @@ class BaseCommand extends Command
             $output->writeln("✅ {$message}");
         } else {
             $output->writeln('');
-            $output->writeln('💡 Done');
+            $output->writeln('👌 Done');
         }
 
         return $this->successResult();

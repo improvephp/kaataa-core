@@ -1,11 +1,16 @@
 <?php
 
-namespace {{ namespace }};
+namespace {{ namespaceTest }};
 
-class {{ class }} extends TestCase
+use {{ namespace }}\{{ class }};
+
+class {{ classTest }} extends TestCase
 {
     /** @test */
-    function your_very_first_test() {
+    public function an_example_of_{{ instance }}()
+    {
+        ${{ instance }} = new {{ class }}();
+
         $this->assertTrue(true);
     }
 }

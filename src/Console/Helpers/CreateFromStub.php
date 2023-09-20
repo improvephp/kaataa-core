@@ -46,9 +46,7 @@ class CreateFromStub
     public function replace(array $replace = null)
     {
         $this->replace = $replace ?: [
-            '{{ class }}' => 'ClassName', // <- TODO Hardcoded
-            // '{{ namespace }}' => 'Tests',
-            // '{{ rootNamespace }}' => 'SebaCarrasco93\Kaataa',
+            '{{ exampleToReplace }}' => 'ExampleToReplace',
         ];
 
         return $this;
@@ -89,6 +87,6 @@ class CreateFromStub
             return file_put_contents($file, $fileContent);
         }
 
-        throw new \Exception("File {$this->fileName} already exists");
+        throw new \Exception("File {$this->fileName} already exists. Please check it and try again.");
     }
 }
