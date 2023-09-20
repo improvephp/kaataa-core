@@ -33,7 +33,7 @@ class CreateFromStub
 
     public function destination(string $destination = null)
     {
-        $this->destination = $destination ?: __DIR__ . '/../../';
+        $destination = $destination ?: (debug_backtrace()[count(debug_backtrace()) - 1]['file']); // __DIR__ . '/../../';
 
         return $this;
     }
