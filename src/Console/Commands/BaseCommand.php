@@ -26,12 +26,13 @@ class BaseCommand extends Command
     public function success(OutputInterface $output, $message = null)
     {
         if ($message) {
-            $output->writeln("✅ Success: {$message}");
+            $output->writeln("✅ {$message}");
         } else {
-            $output->writeln('✅ Done');
+            $output->writeln('');
+            $output->writeln('💡 Done');
         }
 
-        return $this->failureResult();
+        return $this->successResult();
     }
 
     public function error(OutputInterface $output, $message = null)

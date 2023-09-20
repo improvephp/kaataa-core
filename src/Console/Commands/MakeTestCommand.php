@@ -50,7 +50,7 @@ class MakeTestCommand extends BaseCommand
         ;
 
         if ($result) {
-            $this->success($output, "Your test {$name} was created");
+            $this->success($output, "Your test {$name}Test was created");
 
             return $this->successResult();
         }
