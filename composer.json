@@ -1,0 +1,24 @@
+{
+    "name": "sebacarrasco93/kaataa-core",
+    "description": "Core files for sebacarrasco93/kaataa",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SebaCarrasco93\\KaataaCore\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Seba Carrasco Poblete",
+            "email": "sebacarrasco93@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5",
+        "symfony/console": "^6.0",
+        "symfony/var-dumper": "^6.0"
+    }
+}
