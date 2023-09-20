@@ -10,6 +10,7 @@ class CreateFromStub
     public $replace = [];
     public $output;
     public $fileName;
+    public $directory;
 
     public function __construct()
     {
