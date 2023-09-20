@@ -41,9 +41,9 @@ class MakeClassCommand extends BaseCommand
         $result = $create->stub('class')
             ->content()
             ->replace([
-                '{{ namespace }}' => 'SebaCarrasco93\Kaataa\Classes',
+                '{{ namespace }}' => 'Kaataa',
                 '{{ class }}' => $name,
-            ])->inDirectory('Classes')
+            ])->inDirectory('src')
             ->output()
             ->fileName($name)
             ->create()
