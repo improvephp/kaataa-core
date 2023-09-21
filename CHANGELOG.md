@@ -7,3 +7,7 @@ All important changes will be published here
 ## 0.0.1 - 2023-09-21
 
 Very first release
+
+## 0.0.2 - 2023-09-21
+
+Extract to Dojo.php
