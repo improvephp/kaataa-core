@@ -4,6 +4,6 @@
 
 All important changes will be published here
 
-## 0.0.1 - 2023-21-09
+## 0.0.1 - 2023-09-21
 
 Very first release
