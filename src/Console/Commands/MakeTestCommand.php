@@ -1,8 +1,8 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Console\Commands;
+namespace ImprovePhp\KaataaCore\Console\Commands;
 
-use SebaCarrasco93\KaataaCore\Console\Helpers\CreateFromStub;
+use ImprovePhp\KaataaCore\Console\Helpers\CreateFromStub;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

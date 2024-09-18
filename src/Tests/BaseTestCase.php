@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Tests;
+namespace ImprovePhp\KaataaCore\Tests;
 
 use PHPUnit\Framework\TestCase;
 

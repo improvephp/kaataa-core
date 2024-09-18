@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Console\Commands;
+namespace ImprovePhp\KaataaCore\Console\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

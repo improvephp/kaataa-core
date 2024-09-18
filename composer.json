@@ -6,7 +6,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SebaCarrasco93\\KaataaCore\\": "src/",
+            "ImprovePhp\\KaataaCore\\": "src/",
             "Tests\\": "tests/"
         }
     },

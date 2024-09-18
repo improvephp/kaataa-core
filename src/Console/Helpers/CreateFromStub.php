@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Console\Helpers;
+namespace ImprovePhp\KaataaCore\Console\Helpers;
 
 class CreateFromStub
 {

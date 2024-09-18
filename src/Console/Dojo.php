@@ -1,10 +1,10 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Console;
+namespace ImprovePhp\KaataaCore\Console;
 
-use SebaCarrasco93\KaataaCore\Console\Commands\CreateKataCommand;
-use SebaCarrasco93\KaataaCore\Console\Commands\MakeClassCommand;
-use SebaCarrasco93\KaataaCore\Console\Commands\MakeTestCommand;
+use ImprovePhp\KaataaCore\Console\Commands\CreateKataCommand;
+use ImprovePhp\KaataaCore\Console\Commands\MakeClassCommand;
+use ImprovePhp\KaataaCore\Console\Commands\MakeTestCommand;
 use Symfony\Component\Console\Application;
 
 class Dojo

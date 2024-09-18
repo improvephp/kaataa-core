@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\KaataaCore\Console\Commands;
+namespace ImprovePhp\KaataaCore\Console\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\ArrayInput;
