@@ -1,5 +1,5 @@
 {
-    "name": "sebacarrasco93/kaataa-core",
+    "name": "improvephp/kaataa-core",
     "description": "Core files for kaataa",
     "keywords": ["kaataa-core", "php", "kata", "phpunit", "mockery"],
     "type": "package",
