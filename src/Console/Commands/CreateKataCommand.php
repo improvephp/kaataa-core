@@ -48,17 +48,6 @@ class CreateKataCommand extends BaseCommand
         return $this->error($output);
     }
 
-    private function callAnotherCommand(string $command, array $arguments, OutputInterface $output)
-    {
-        $command = $this->getApplication()->find($command);
-
-        $greetInput = new ArrayInput($arguments);
-
-        $returnCode = $command->run($greetInput, $output);
-
-        return true;
-    }
-
     public function createClassFile($name, OutputInterface $output): bool
     {
         return $this->callAnotherCommand('make:class', [
