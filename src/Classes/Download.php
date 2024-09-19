@@ -6,7 +6,11 @@ use GuzzleHttp\Client;
 
 class Download
 {
-    public $client;
+    public Client $client;
+
+    public array $classes = [];
+    public array $tests_pest = [];
+    public array $tests_phpunit = [];
 
     public function __construct()
     {
@@ -22,10 +26,25 @@ class Download
         return json_decode($response->getBody()->getContents(), true);
     }
 
-    public static function kata(string $id): array
+    public function getKata(string $id): Download
     {
         $instance = new static();
 
-        return $instance->getJson($id);
+        $result = $instance->getJson($id);
+
+        $files = $result['data']['files'];
+
+        $this->classes = $files['classes'];
+        $this->tests_pest = $files['tests_pest'];
+        $this->tests_phpunit = $files['tests_phpunit'];
+
+        return $this;
+    }
+
+    public static function kata(string $id): Download
+    {
+        $instance = new static();
+
+        return $instance->getKata($id);
     }
 }
